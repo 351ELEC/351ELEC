@@ -3,8 +3,8 @@
 
 	<game>
 		<path>./File Manager.sh</path>
-		<name>Start File Manager</name>
-		<desc>DinguxCommander File Manager.</desc>
+		<name>File Manager</name>
+		<desc>Dual panel file manager</desc>
 		<developer>shantigilbert </developer>
 		<publisher>Emuelec</publisher>
 		<rating>1.0</rating>
@@ -143,5 +143,18 @@
 		<thumbnail>./downloaded_images/filemanager-thumb.png</thumbnail>
 		<image>./downloaded_images/filemanager.png</image>
 	</game>
+
+        <game>
+                <path>./351Files.sh</path>
+                <name>351Files</name>
+                <desc>Single panel file manager</desc>
+                <developer>Tardigrade</developer>
+                <publisher>non-commercial</publisher>
+                <rating>1.0</rating>
+                <releasedate>2021</releasedate>
+                <genre>script</genre>
+                <thumbnail>./downloaded_images/filemanager-thumb.png</thumbnail>
+                <image>./downloaded_images/filemanager.png</image>
+        </game>
 
 </gameList>

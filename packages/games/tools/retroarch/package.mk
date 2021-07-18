@@ -19,11 +19,11 @@
 ################################################################################
 
 PKG_NAME="retroarch"
-PKG_VERSION="c226bd87f47b3fdec642216fcaf6edc651e30eb4"
+PKG_VERSION="4a6dc36b1cc026bf337537e2d7527a117727bb91"
 PKG_SITE="https://github.com/libretro/RetroArch"
 PKG_URL="$PKG_SITE.git"
 PKG_LICENSE="GPLv3"
-PKG_DEPENDS_TARGET="toolchain SDL2 alsa-lib openssl freetype zlib retroarch-assets retroarch-overlays core-info ffmpeg libass joyutils empty $OPENGLES samba avahi nss-mdns openal-soft libogg libvorbisidec libvpx libpng16"
+PKG_DEPENDS_TARGET="toolchain SDL2 alsa-lib openssl freetype zlib retroarch-assets retroarch-overlays core-info ffmpeg libass joyutils empty $OPENGLES samba avahi nss-mdns openal-soft libogg libvorbisidec libvpx libpng"
 PKG_LONGDESC="Reference frontend for the libretro API."
 GET_HANDLER_SUPPORT="git"
 
@@ -65,6 +65,7 @@ PKG_CONFIGURE_OPTS_TARGET="--disable-qt \
 if [[ "$DEVICE" =~ RG351 ]]
 then
   PKG_CONFIGURE_OPTS_TARGET+=" --enable-opengles3 \
+			     --enable-opengles3_2 \
                              --enable-kms \
                              --disable-mali_fbdev"
 else
